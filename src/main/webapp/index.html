@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="./css/index.css">
+</head>
+<body class="container">
+
+    <div class="container--welcome">
+        <div class="welcome">
+            <h2 class="welcome__heading">Welcome to Reimbursement Calculation App</h2>
+            <div class="welcome__info">
+                <p class="welcome__desc">This application allows you to send your summary of business trip costs.</p>
+                <p class="welcome__ask">But first let me know : are you Admin or User?</p>
+            </div>
+        </div>
+
+        <div class="adminOrUser">
+            <form action="admin-get" id="goAdmin" method="get" calss="option option__admin" >
+                <button id="adminBtn" class="option__button option__button--admin">Admin</button>
+            </form>
+            <form action="user-get" id="goUser" method="get" class=" option option__user">
+                <button id="userBtn" class="option__button option__button--user">User</button>
+            </form>
+        </div>
+    </div>
+
+    <script>
+        var adminBtn = document.getElementById("admin");
+        var userBtn = document.getElementById("user");
+
+        adminBtn.addEventListener('click',function () {
+            document.getElementById("goAdmin").submit();
+        });
+
+        userBtn.addEventListener('click',function () {
+            document.getElementById("goUser").submit();
+        });
+    </script>
+</body>
+</html>

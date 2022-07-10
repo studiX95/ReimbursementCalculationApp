@@ -1,0 +1,76 @@
+@import "reset.css";
+
+@font-face {
+    font-family: 'Roboto-Bold';
+    src: url('../assets/fonts/Roboto/Roboto-Bold.ttf');
+}
+
+@font-face {
+    font-family: 'Roboto-Regular';
+    src: url('../assets/fonts/Roboto/Roboto-Regular.ttf');
+}
+
+@font-face {
+    font-family: 'Roboto-Light';
+    src: url('../assets/fonts/Roboto/Roboto-Light.ttf');
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    background-image: url('../assets/images/cloudy-day.png');
+    background-repeat: repeat;
+}
+
+.container--reimbursement {
+    padding: 40px 40px;
+    margin: 80px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 960px;
+    background-color: #efefef;
+    border: 4px solid #000;
+}
+
+.reimbursement__heading{
+    font-family: 'Roboto-Bold';
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.reimbursement__text {
+    font-family: 'Roboto-Regular    ';
+    font-size: 18px;
+    margin: 5px 0;
+}
+
+.buttons {
+    display: flex;
+    justify-content: space-evenly;
+    width: 600px;
+}
+
+.btn {
+    outline: none;
+    border: none;
+    font-size: 1.2rem;
+    font-family: 'Roboto-Regular';
+    text-decoration: none;
+    color: #000;
+    text-align: center;
+    line-height: 60px;
+    background-color: aquamarine;
+}
+
+.btn:hover {
+    cursor: pointer;
+}
+
+.btn--goBack {
+    height: 60px;
+    width: 220px;
+}
